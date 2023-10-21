@@ -41,11 +41,11 @@ const getProducts = async () => {
     
     productItem.appendChild(figCaption);
     productItem.appendChild(figure);
-
+    container.appendChild(productItem)
+    productList.appendChild(container);
 
   })
-  container.appendChild(productItem)
-  productList.appendChild(container);
+
 
 }
 
