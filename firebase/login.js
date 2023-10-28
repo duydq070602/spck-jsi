@@ -22,3 +22,5 @@ const handleLogin = () => {
         });
 }
 loginBtn.addEventListener('click', handleLogin);
+
+console.log(1)

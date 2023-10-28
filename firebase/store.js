@@ -1,15 +1,20 @@
 let products = [];
 const productList = document.getElementById('product-list')
 
+
 const getProducts = async () => {
   const response = await fetch(
     "https://651ecb0544a3a8aa47690471.mockapi.io/products"
   );
   products = await response.json();
   console.log(products);
+  const container = document.createElement('div');
+  container.classList.add('container')
+  const row = document.createElement('div');
+  row.classList.add('row');
   products.forEach((product) => {
-    const container = document.createElement('div');
-    container.classList.add('col-md-3')
+    const col = document.createElement('div');
+    col.classList.add('col-md-3');
 
     const productItem = document.createElement('div');
     productItem.classList.add('product-item');
@@ -19,7 +24,11 @@ const getProducts = async () => {
     const productImage = document.createElement('img');
     productImage.src = product.image;
     productImage.classList.add('product-item');
+    const addToCart = document.createElement('button');
+    addToCart.classList.add('add-to-cart');
+    
 
+    figure.appendChild(addToCart)
     figure.appendChild(productImage)
 
     const figCaption = document.createElement('figcaption');
@@ -41,10 +50,14 @@ const getProducts = async () => {
     
     productItem.appendChild(figCaption);
     productItem.appendChild(figure);
-    container.appendChild(productItem)
-    productList.appendChild(container);
+    col.appendChild(productItem)
+    row.appendChild(col)
 
   })
+  
+  container.appendChild(row);
+  productList.appendChild(container)
+
 
 
 }
