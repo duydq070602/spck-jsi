@@ -4,10 +4,12 @@ import { signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/1
 
 const emailElm = document.getElementById('email');
 const passwordElm = document.getElementById('password')
-const loginBtn = document.getElementById('login-btn')
+const loginForm = document.getElementById('login-form')
 
 
-const handleLogin = () => {
+
+const handleLogin = (e) => {
+    e.preventDefault();
     const email = emailElm.value;
     const password = passwordElm.value;
     signInWithEmailAndPassword(auth, email, password)
@@ -21,6 +23,5 @@ const handleLogin = () => {
             alert(errorCode);
         });
 }
-loginBtn.addEventListener('click', handleLogin);
-
+loginForm.addEventListener('submit', handleLogin);
 console.log(1)

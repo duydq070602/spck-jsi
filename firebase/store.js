@@ -26,10 +26,16 @@ const getProducts = async () => {
     productImage.classList.add('product-item');
     const addToCart = document.createElement('button');
     addToCart.classList.add('add-to-cart');
-    
+    addToCart.setAttribute('data-product-tile','add-to-cart')
+    addToCart.textContent = 'Add to cart';
+    addToCart.addEventListener('click', function(){
+      window.location = '/in4/in4.html';
+    })
 
     figure.appendChild(addToCart)
     figure.appendChild(productImage)
+
+
 
     const figCaption = document.createElement('figcaption');
     const productCourse = document.createElement('h3');
@@ -61,6 +67,5 @@ const getProducts = async () => {
 
 
 }
-
 
 getProducts()
