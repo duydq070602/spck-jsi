@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>BookSaw - Free Book Store HTML CSS Template</title>
+	<title>MyCourse - Courses for everyone</title>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -94,12 +94,14 @@
     
                                             <ul>
                                                 <li class="active"><a href="/index.html">Home</a></li>
-                                                <li><a href="about.html">About </a></li>
-                                                <li><a href="">Login </a></li>
-                                                <li><a href="blog.html">Register </a></li>
+                                                <li><a href="/login.html">Login </a></li>
+                                                <li><a href="/register.html">Register </a></li>
                                             </ul>
     
                                         </li>
+										<li class="menu-item active"><a href="/store.html">Store</a></li>
+										
+
 
                                     </ul>
     
@@ -120,56 +122,41 @@
         </div><!--header-wrap-->
 
 
-        <section id="billboard">
-            <!-- <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <button class="prev slick-arrow">
-                            <i class="icon icon-arrow-left"></i>
-                        </button>
-                        <div class="main-slider pattern-overlay">
-                            <div class="slider-item">
-                                <div class="banner-content">
-                                    <h2 class="banner-title">Life of the Wild</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu feugiat amet, libero
-                                        ipsum enim pharetra hac. Urna commodo, lacus ut magna velit eleifend. Amet, quis
-                                        urna, a eu.</p>
-                                    <div class="btn-wrap">
-                                        <a href="#" class="btn btn-outline-accent btn-accent-arrow">Read More<i
-                                                class="icon icon-ns-arrow-right"></i></a>
-                                    </div>
-                                </div>
-                                <img src="images/main-banner1.jpg" alt="banner" class="banner-image">
-                            </div>
-    
-                            <div class="slider-item">
-                                <div class="banner-content">
-                                    <h2 class="banner-title">Birds gonna be Happy</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu feugiat amet, libero
-                                        ipsum enim pharetra hac. Urna commodo, lacus ut magna velit eleifend. Amet, quis
-                                        urna, a eu.</p>
-                                    <div class="btn-wrap">
-                                        <a href="#" class="btn btn-outline-accent btn-accent-arrow">Read More<i
-                                                class="icon icon-ns-arrow-right"></i></a>
-                                    </div>
-                                </div>
-                                <img src="images/main-banner2.jpg" alt="banner" class="banner-image">
-                            </div>
-    
-                        </div>
-    
-                        <button class="next slick-arrow">
-                            <i class="icon icon-arrow-right"></i>
-                        </button>
-    
-                    </div>
-                </div>
-            </div> -->
-            <div id="product-list">
+            <div class="main-list">
+				<img id="course-image" src="" alt="">
+				<div class="main-list-item">
+					<h2 id="course-name"></h2>
+					<h3 id="course-teacher"></h3>
+					<h4 id="course-price"></h4>
+					<h5 id="course-lesson">Lesson</h5>
+					<p id="course-description">Detailed information</p>
+					<div>
+						<button id="add-to-cart">Add to cart</button>
+						<button id="purchase">Buy now</button>
+					</div>
+				</div>
+				
 
             </div>
+		    <div class="comment-section">
+				<div>
+
+				</div>
+			</div>
     
-        </section>
+		<div class="section-header align-center">
+				<div class="title">
+					<span>Related products</span>
+				</div>
+				<h2 class="section-title">Popular Courses</h2>
+		</div>
+		<div id="product-list">
+
+		</div>
+		<div class="btn-wrap align-right">
+			<a href="./store.html" class="btn-accent-arrow">View all products <i
+					class="icon icon-ns-arrow-right"></i></a>
+		</div>
     
     
 	<footer id="footer">

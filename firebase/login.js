@@ -16,7 +16,7 @@ const handleLogin = (e) => {
         .then((userCredential) => {
             const user = userCredential.user;
             alert('dang nhap thanh cong')
-            window.location = 'index.html';
+            window.location = './index.html';
         })
         .catch((error) => {
             const errorCode = error.code;
@@ -24,4 +24,3 @@ const handleLogin = (e) => {
         });
 }
 loginForm.addEventListener('submit', handleLogin);
-console.log(1)

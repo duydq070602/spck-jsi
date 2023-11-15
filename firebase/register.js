@@ -5,21 +5,22 @@ import { createUserWithEmailAndPassword } from "https://www.gstatic.com/firebase
 
 const emailElm = document.getElementById('email');
 const passwordElm = document.getElementById('password')
-const registerBtn = document.getElementById('register-btn')
+const registerForm = document.getElementById('register-form')
 
-const handleRegister = () => {
+const handleRegister = (e) => {
     const email = emailElm.value;
     const password = passwordElm.value;
     createUserWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
             const user = userCredential.user;
             alert('Dang ki thanh cong')
+            window.location = '/login.html'
         })
         .catch((error) => {
             const errorCode = error.code;
             alert(errorCode)
         });
 }
-registerBtn.addEventListener('click', handleRegister);
+registerForm.addEventListener('submit', handleRegister);
 
 

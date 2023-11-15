@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>BookSaw - Free Book Store HTML CSS Template</title>
+	<title>MyCourse - Courses for everyone</title>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -46,9 +46,10 @@
 					</div>
 					<div class="col-md-6">
 						<div class="right-element">
+							<a href="#"><button id="logout-btn">Log out</button></a>
 							<a href="#" class="user-account for-buy"><i
 									class="icon icon-user"></i><span>Account</span></a>
-							<a href="cart/cart.html" class="cart for-buy"><i class="icon icon-clipboard"></i><span>Cart:(0
+							<a href="./cart.html" class="cart for-buy"><i class="icon icon-clipboard"></i><span>Cart:(0
 									$)</span></a>
 
 							<div class="action-menu">
@@ -93,16 +94,16 @@
 
 										<ul>
 											<li class="active"><a href="index.html">Home</a></li>
-											<li><a href="login/login.html">Login</a></li>
-											<li><a href="register/register.html">Register</a></li>
-											<li><a href="store/store.html">Our Store </a></li>
-											<li><a href="cart/cart.html">Purchase</a></li>
+											<li><a href="./login.html">Login</a></li>
+											<li><a href="./register.html">Register</a></li>
+											<li><a href="./store.html">Our Store </a></li>
+											<li><a href="./cart.html">Purchase</a></li>
 							
 										</ul>
 
 									</li>
 									<li class="menu-item"><a href="#featured-books" class="nav-link">Featured</a></li>
-									<li class="menu-item"><a href="#popular-books" class="nav-link">Popular</a></li>
+									<li class="menu-item"><a href="#best-selling" class="nav-link">Popular</a></li>
 									<li class="menu-item"><a href="#special-offer" class="nav-link">Offer</a></li>
 								</ul>
 
@@ -202,69 +203,7 @@
 
 					<div class="product-list" data-aos="fade-up">
 						<div class="row">
-
-							<div class="col-md-3">
-								<div class="product-item">
-									<figure class="product-style">
-										<img src="images/product-item1.jpg" alt="Books" class="product-item">
-										<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
-											Cart</button>
-									</figure>
-									<figcaption>
-										<h3>Simple way of piece life</h3>
-										<span>Armor Ramsey</span>
-										<div class="item-price">$ 40.00</div>
-									</figcaption>
-								</div>
-							</div>
-
-							<div class="col-md-3">
-								<div class="product-item">
-									<figure class="product-style">
-										<img src="images/product-item2.jpg" alt="Books" class="product-item">
-										<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
-											Cart</button>
-									</figure>
-									<figcaption>
-										<h3>Great travel at desert</h3>
-										<span>Sanchit Howdy</span>
-										<div class="item-price">$ 38.00</div>
-									</figcaption>
-								</div>
-							</div>
-
-							<div class="col-md-3">
-								<div class="product-item">
-									<figure class="product-style">
-										<img src="images/product-item3.jpg" alt="Books" class="product-item">
-										<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
-											Cart</button>
-									</figure>
-									<figcaption>
-										<h3>The lady beauty Scarlett</h3>
-										<span>Arthur Doyle</span>
-										<div class="item-price">$ 45.00</div>
-									</figcaption>
-								</div>
-							</div>
-
-							<div class="col-md-3">
-								<div class="product-item">
-									<figure class="product-style">
-										<img src="images/product-item4.jpg" alt="Books" class="product-item">
-										<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
-											Cart</button>
-									</figure>
-									<figcaption>
-										<h3>Once upon a time</h3>
-										<span>Klien Marry</span>
-										<div class="item-price">$ 35.00</div>
-									</figcaption>
-								</div>
-							</div>
-
-						</div><!--ft-books-slider-->
-					</div><!--grid-->
+							<div id="product-list"></div>
 
 
 				</div><!--inner-content-->
@@ -274,7 +213,7 @@
 				<div class="col-md-12">
 
 					<div class="btn-wrap align-right">
-						<a href="store/store.html" class="btn-accent-arrow">View all products <i
+						<a href="./store.html" class="btn-accent-arrow">View all products <i
 								class="icon icon-ns-arrow-right"></i></a>
 					</div>
 
@@ -300,16 +239,16 @@
 
 						<div class="col-md-6">
 							<div class="product-entry">
-								<h2 class="section-title divider">Best Selling Book</h2>
+								<h2 class="section-title divider">Best-seller</h2>
 
 								<div class="products-content">
-									<div class="author-name">By Timbur Hood</div>
-									<h3 class="item-title">Birds gonna be happy</h3>
+									<div class="author-name">By Charlie Puth</div>
+									<h3 class="item-title">Basic Piano</h3>
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu feugiat amet,
 										libero ipsum enim pharetra hac.</p>
-									<div class="item-price">$ 45.00</div>
+									<div class="item-price">$ 5.00</div>
 									<div class="btn-wrap">
-										<a href="store/store.html" class="btn-accent-arrow">shop it now <i
+										<a href="./store.html" class="btn-accent-arrow">shop it now <i
 												class="icon icon-ns-arrow-right"></i></a>
 									</div>
 								</div>
@@ -353,7 +292,10 @@
 				<div class="inner-content">
 					<div class="product-list" data-aos="fade-up">
 						<div class="grid product-grid">
-							<div class="product-item">
+								<div id="product-offer"></div>
+							
+							
+							<!-- <div class="product-item">
 								<figure class="product-style">
 									<img src="images/product-item5.jpg" alt="Books" class="product-item">
 									<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
@@ -424,14 +366,13 @@
 									<span>Armor Ramsey</span>
 									<div class="item-price">$ 40.00</div>
 								</figcaption>
-							</div>
+							</div> -->
 						</div><!--grid-->
 					</div>
 				</div><!--inner-content-->
 			</div>
 		</div>
 	</section>
-
 	<section id="subscribe">
 		<div class="container">
 			<div class="row justify-content-center">
@@ -442,7 +383,7 @@
 						<div class="col-md-6">
 
 							<div class="title-element">
-								<h2 class="section-title divider">Subscribe to our newsletter</h2>
+								<h2 class="section-title divider">Give us feedback</h2>
 							</div>
 
 						</div>
@@ -629,7 +570,9 @@
 		crossorigin="anonymous"></script>
 	<script src="js/plugins.js"></script>
 	<script src="js/script.js"></script>
-
+	<script src="/firebase/main.js"></script>
+	<script src="/firebase/logout.js"></script>
+	<script src="/firebase/"></script>
 </body>
 
 </html>

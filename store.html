@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>BookSaw - Free Book Store HTML CSS Template</title>
+	<title>MyCourse - Courses for everyone</title>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -94,9 +94,9 @@
     
                                             <ul>
                                                 <li class="active"><a href="/index.html">Home</a></li>
-                                                <li><a href="about.html">About </a></li>
-                                                <li><a href="">Login </a></li>
-                                                <li><a href="blog.html">Register </a></li>
+                                                <li><a href="login.html">Login </a></li>
+                                                <li><a href="register.html">Register </a></li>
+												<li><a href="cart.html">Purchase</a></li>
                                             </ul>
     
                                         </li>
@@ -126,9 +126,25 @@
 				</div>
 				<h2 class="section-title">Our courses</h2>
 			</div>
+			<div class="filter">
+			<ul class="tabs">
+				<li data-tab-target="#all" class="active tab">All</li>
+				<li data-tab-target="#business" class="tab">Business</li>
+				<li data-tab-target="#arts" class="tab">Arts</li>
+				<li data-tab-target="#sports" class="tab">Sports</li>
+				<li data-tab-target="#technology" class="tab">Technology</li>
+				<li data-tab-target="#life-skills" class="tab">Life Skills</li>
+			</ul>
+			</div>
 			
-			
-			<div id="product-list"></div>
+			<div id="tab-content">
+				<div id="all" data-tab-content class="active"></div>
+				<div id="business" data-tab-content></div>
+				<div id="arts" data-tab-content></div>
+				<div id="sports" data-tab-content></div>
+				<div id="technology" data-tab-content></div>
+				<div id="life-skills" data-tab-content></div>
+			</div>
 			<!--ft-books-slider-->
 		</div><!--grid-->
 

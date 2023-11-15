@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <!-- Design by foolishdeveloper.com -->
-    <title>Glassmorphism login Form Tutorial in html css</title>
+    <title>Login</title>
  
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -139,8 +139,8 @@ button{
         <div class="shape"></div>
         <div class="shape"></div>
     </div>
-    <form>
-        <h3>Register</h3>
+    <form id="login-form">
+        <h3>Login</h3>
 
         <label for="username">Email</label>
         <input type="text" placeholder="Email" id="email">
@@ -148,8 +148,8 @@ button{
         <label for="password">Password</label>
         <input type="password" placeholder="Password" id="password">
 
-        <a href="/login/login.html"><p>Already have an account?</p></a>
-        <button id="register-btn">Register</button>
+        <a href="./register.html"><p>Don't have an account?</p></a>
+        <button id="login-btn">Login</button>
         <div class="social">
           <div class="go"><i class="fab fa-google"></i>  Google</div>
           <div class="fb"><i class="fab fa-facebook"></i>  Facebook</div>
@@ -157,6 +157,6 @@ button{
     </form>
 
         
-<script type="module" src="/spck/firebase/register.js"></script>
+<script type="module" src="./firebase/login.js"></script>
 </body>
 </html>

@@ -19,7 +19,7 @@ Version: 1.1
   --header-height: 160px;
   --header-height-min: 80px;
 }
-
+.main-list
 /* on mobile devices below 600px
  */
 @media screen and (max-width: 600px) {
@@ -2468,4 +2468,28 @@ footer#footer {
   overflow: hidden;
   text-overflow: ellipsis;
   margin-top: 15px;
+}
+.media{
+  text-align: center;
+}
+
+.main-list{
+  display: flex;
+  text-align: center;
+  align-items: center;
+ 
+
+}
+.main-list img{
+  max-width: 100%;
+  margin-top: 40px;
+  padding: 100px 300px;
+}
+.main-list-item{
+  text-align: left;
+  font-size: 26px;
+}
+
+.media img{
+  width: fit-content;
 }
